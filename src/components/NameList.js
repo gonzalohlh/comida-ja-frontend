@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import { URL } from "../App";
 import loadingImg from "../assets/loader.gif";
+import logo from "../assets/Favicon.png";
 
 const NameList = () => {
   const [names, setNames] = useState([]);
@@ -107,7 +108,7 @@ const NameList = () => {
 
   return (
     <div>
-      <h2>Comida - JA</h2>
+      <h2>Comida - <img className="--img-logo" src={logo} alt="JA" /></h2>
       <NameForm
         name={name}
         handleInputChange={handleInputChange}
@@ -118,10 +119,11 @@ const NameList = () => {
       {names.length > 0 && (
         <div className="--flex-between --pb">
           <p>
-            <b>Cantidad Nombres:</b> {names.length}
+            <b>Cantidad:</b> <span className="span">{names.length}</span>
           </p>
           <p>
-            <b>Entregados:</b> {completedNames.length}
+            <b>Entregados: </b>
+            <span className="span-2">{completedNames.length}</span>
           </p>
         </div>
       )}

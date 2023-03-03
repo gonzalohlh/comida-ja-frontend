@@ -14,7 +14,7 @@
   --color-purple: #9d0191;
   --color-orange: #ff7722;
 
-  --color-primary: #007bff;
+  --color-primary: #2d0203;
   --color-success: #28a745;
   --color-danger: orangered;
 }
@@ -130,12 +130,25 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h3 {
   font-size: 2.5rem;
 }
 h4 {
   font-size: 2rem;
+}
+
+.span {
+  font-weight: 800;
+  color: darkred;
+}
+
+.span-2 {
+  font-weight: 800;
+  color: rgb(6, 128, 12);
 }
 
 p {
@@ -444,6 +457,12 @@ a:hover {
   padding: 0 10px;
 }
 
+.--img-logo {
+  max-width: 100%;
+  height: 40px;
+  margin-left: 8px;
+}
+
 .task-container {
   width: 100%;
   max-width: 500px;
@@ -463,26 +482,44 @@ a:hover {
   display: flex;
 }
 .task-form input {
-  width: 85%;
+  width: 80%;
   height: 4rem;
   font-size: 1.6rem;
   padding: 0 5px;
   outline: none;
+  border-radius: 5px;
+  border-width: 0.1px;
+  background-color: rgb(245, 201, 184);
   /* margin-right: 5px; */
 }
+.task-form input::placeholder {
+  color: #4f0303;
+}
 .task-form button {
-  width: 15%;
+  /* width: 20%;
   height: 4rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   cursor: pointer;
   background-color: var(--color-purple);
   color: #fff;
   border: none;
-  transition: all 0.3s;
+  transition: all 0.3s; */
+  display: inline-flex;
+  align-items: center;
+  background-color: tan;
+  padding: 0.7rem 1rem;
+  border-radius: 4rem;
+  color: hsl(331, 12%, 16%);
+  box-shadow: 0 8px 32px hsla(39, 62%, 65%, 0.25);
+  transition: box-shadow 0.3s;
+  margin-left: 3px;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .task-form button:hover {
-  background-color: var(--color-primary);
+   background-color: rgb(195, 24, 24);
+  color: hsl(52, 84%, 52%);
 }
 
 .task {
@@ -538,6 +575,6 @@ a:hover {
 }
 
 .task-icons > * {
-  margin-left: 7px;
+  margin-left: 15px;
   cursor: pointer;
 }
