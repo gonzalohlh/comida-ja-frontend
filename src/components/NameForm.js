@@ -9,7 +9,7 @@ const NameForm = ({
     <form className="task-form" onSubmit={isEditing ? updateName : createName}>
       <input
         type="text"
-        placeholder="Agregar Nombre y Cantidad"
+        placeholder="Agregar Nombre"
         name="name"
         value={name}
         onChange={handleInputChange}

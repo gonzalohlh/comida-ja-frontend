@@ -119,7 +119,7 @@ const NameList = () => {
       {names.length > 0 && (
         <div className="--flex-between --pb">
           <p>
-            <b>Cantidad:</b> <span className="span">{names.length}</span>
+            <b>Pedidos:</b> <span className="span">{names.length}</span>
           </p>
           <p>
             <b>Entregados: </b>
