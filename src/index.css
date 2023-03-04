@@ -518,8 +518,7 @@ a:hover {
 }
 
 .task-form button:hover {
-   background-color: rgb(195, 24, 24);
-  color: hsl(52, 84%, 52%);
+  box-shadow: 0 8px 48px hsla(39, 62%, 65%, 0.3);
 }
 
 .task {
